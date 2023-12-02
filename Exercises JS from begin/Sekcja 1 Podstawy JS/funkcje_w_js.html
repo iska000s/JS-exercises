@@ -88,7 +88,29 @@ const test = multiplication(10, 25);
 
 console.log(test);
 
+// CALLBACK
 
+function greatThan6(arr, callback){
+    for(let i = 0; i < arr.length; i++){
+        if(i<6){
+            callback(arr[i])
+        }
+    }
+}
+
+arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+// zapis 1 - funkcja wyciągnięta poza argument
+function show(number){
+    console.log(number);
+}
+
+greatThan6(arr1, show);
+
+// zapis 2 - funkcja rozpisana jako argument
+greatThan6(arr1, function(number2){
+    console.log(number2);
+});
 
 </script>
 </body>
