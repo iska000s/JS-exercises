@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <meta name="author" content="Izabela Stankiewicz">
+    <meta name="description"
+          content="EX JS">
+    <meta name="keywords"
+          content="exercises">
+    <meta name="robots" content="index, follow">
+
+    <title>Ex JS zadanie </title>
+    
+
+  </head>
+  <body>
+    Cześć
+    
+<script>
+    // ZADANIE 1 - łańcuch zmiennych
+    const mark = "Sony";
+    const model = "Xperia";
+    let yearProduction = 2020;
+    let battery = 100;
+    let color = "red";
+
+    console.log(mark, model, yearProduction, battery, color)
+
+    // ZADANIE 2 - średnia
+
+    const points1 = 80;
+    const points2 = 90;
+    const points3 = 87;
+
+    let result = (points1 + points2+ points3)/3;
+    console.log(result);
+
+    // ZADANIE 3 - łańcuch znaków
+
+    let text = "Gdyby kózka nie skakałla, to by nóżki nie złamała";
+    console.log(text[0], text[text.length-1]);
+    const textIcon = text + " :) ";
+    console.log(textIcon);
+
+    // ZADANIE 4 - literały szablonu
+
+    const city = "w Madrycie";
+    let cityLiteral = `Życie jak ${city}`;
+    console.log(cityLiteral); 
+
+    // ZADANIE 5 = BOOLEAN
+
+    const msgSent = false;
+    let nr1 = 14 < 90;
+    console.log(nr1);
+
+    // PRYMITYWY: tekxt, liczzby, wartości logiczne bool, bigInt, undifinde, null, symbol  Symbol();
+
+    let currentTask = "Task #1";
+    currentTask = null;
+
+    console.log(currentTask);
+
+    // ZADANIE 6 - OBIEKTY
+
+    let car = {
+        mark: "Toyota",
+        name: "Corolla",
+        productionYear: 2004,
+    }
+
+    console.log(car);
+
+    car.name = "Prius";
+    console.log(car);
+
+    // ZADANIE 7 - TABLICE
+
+    let array = ["Karolina", 2, 6, null, arr = {arr: 1, arr2: 2, arr3: 3}, "Taksówka"];
+    console.log(array[0], array[array.length-1]);
+
+    // array[1] = `${array[1]} !`;
+    array[1] = array[1] + "!";
+    console.log(array);
+
+    console.log(array[4][`arr2`]);
+
+
+</script>
+</body>
+</html>

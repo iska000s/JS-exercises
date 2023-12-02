@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <meta name="author" content="Izabela Stankiewicz">
+    <meta name="description"
+          content="EX JS">
+    <meta name="keywords"
+          content="exercises">
+    <meta name="robots" content="index, follow">
+
+    <title>Ex JS zadanie</title>
+    
+
+  </head>
+  <body>
+    Cześć
+    
+<script>
+
+// ZADANIE 1 - modulo
+
+    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+    let sum = 0
+
+    for(let i=0; i<arr.length; i++){
+        if((arr[i] % 2) == 0){
+            sum = sum + arr[i];
+        }
+    }
+    console.log(sum);
+
+// ZADANIE 2 - ternary
+
+    let num = 23;
+    let result = num > 20 ? "większe" : "mniejsze";
+    console.log(`Liczba ${num} jest ${result} od 20`);
+
+// ZADANIE 3 - operatory porównania
+
+    let temp = 20;
+
+    if(temp<=0){
+        console.log("zimno, ślisko")
+    } else if (temp<=8){
+        console.log("wczesna wiosna");
+    } else if (temp<25){
+        console.log("lato")
+    } else{
+        console.log("Nieznana temperatura")
+    }
+
+</script>
+</body>
+</html>
