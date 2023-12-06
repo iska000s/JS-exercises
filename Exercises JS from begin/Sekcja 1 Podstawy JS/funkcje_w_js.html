@@ -156,6 +156,47 @@ newArr = [1,2,3,4,5,6,7];
 multiplyRef2(newArr);
 
 
+// spread operator
+
+function createComputer(cpu, gpu, ram, disk){
+    return{
+        cpu: cpu,
+        gpu: gpu,
+        ram: ram,
+        disk: disk
+    };
+}
+
+let computer = createComputer("amd", "nvidia", "32gb", "1tb");
+console.log(computer);
+
+function createLaptop(objComputer){
+    return{
+        ...objComputer,
+        type: "laptop",
+        weight: 2.5,
+    }
+}
+
+console.log(createLaptop(createComputer()));
+console.log(createLaptop(computer));
+
+let samsung = createLaptop(computer);
+console.log(samsung);
+
+function createTV(objPar){
+    return{
+        ...objPar,
+        price: "2000 zł"
+    };
+}
+
+let newTV = createTV(["samsung", "mic", "100"]);
+console.log(newTV);
+
+let newTV2 = createTV(computer);
+console.log(newTV2);
+
 </script>
 </body>
 </html>
