@@ -17,7 +17,7 @@
 
   </head>
   <body>
-    Cześć
+    Powtórzenie JS - ćwiczenia
     
 <script>
 
@@ -111,6 +111,50 @@ greatThan6(arr1, show);
 greatThan6(arr1, function(number2){
     console.log(number2);
 });
+
+// PRZEKAZANIE DANYCH DO FUNKCJI PRZEZ WARTOŚCI I PRZEZ REFERENCJE
+
+function info (num, obj){
+    console.log(`wejściowe dane: ${num},`, obj);
+    // 20 + obiekt
+    num = 10;
+    console.log(num);
+    // 10
+    // obj = {z: 3};
+    // obj = {o: 40, i: 20};
+    // console.log(obj);
+    // {o: 40, i: 20}
+
+}
+
+const d = 20;
+let color = {dark: "black", shine: "yellow"};
+color = {first: "white"};
+info(d, color)
+console.log(color)
+
+// zadanie referencje - przekazanie danych
+
+function multiplyRef (){
+    let newArr = [];
+
+    for(let i = 0; i < arguments.length; i ++){
+        newArr[i] = arguments[i]*3
+    }
+    console.log(newArr);
+}
+multiplyRef(1,2,3,4,5,6,7);
+
+
+function multiplyRef2 (arr){
+    for(let i = 0; i < arr.length; i ++){
+        arr[i] *= 3
+    }
+    console.log(arr);
+}
+newArr = [1,2,3,4,5,6,7];
+multiplyRef2(newArr);
+
 
 </script>
 </body>
