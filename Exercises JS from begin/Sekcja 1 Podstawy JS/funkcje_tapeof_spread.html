@@ -203,6 +203,8 @@ console.log(newTV2);
 function createUser (name, contact){
     let user = {
         name: name,
+        email: null,
+        telephone: null
     }
     if(typeof contact == "string"){
         user.email = contact;
@@ -219,11 +221,11 @@ function createUser (name, contact){
 let users = {
     user1 : {
         name: "Basia",
-        contact: 323244,
+        contact: 323244
     },
     user2 : {
         name: "Tomek",
-        contact: 2323n,
+        contact: 2323n
     }
 }
 
