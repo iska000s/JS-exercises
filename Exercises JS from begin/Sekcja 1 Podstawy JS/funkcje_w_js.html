@@ -197,6 +197,50 @@ console.log(newTV);
 let newTV2 = createTV(computer);
 console.log(newTV2);
 
+
+// typeof
+
+function createUser (name, contact){
+    let user = {
+        name: name,
+    }
+    if(typeof contact == "string"){
+        user.email = contact;
+    }
+    else if (typeof contact == "number"){
+        user.telephone = contact;
+    }
+    else{
+        user.contact = "podano niepoprawne dane kontaktowe";
+    }
+    return user;
+}
+
+let users = {
+    user1 : {
+        name: "Basia",
+        contact: 323244,
+    },
+    user2 : {
+        name: "Tomek",
+        contact: 2323n,
+    }
+}
+
+
+console.log(createUser("Ola", "ola@example.com"));
+console.log(createUser("Kasia", 938238293));
+
+console.log(createUser(users.user2.name, users.user2.contact));
+console.log(createUser(users.user1.name, "nie podano"));
+
+users.user3 = createUser("Bartek", 232323284);
+console.log(users.user3);
+
+users.user1 = createUser(users.user1.name, users.user1.contact);
+console.log(users.user1);
+
+
 </script>
 </body>
 </html>
