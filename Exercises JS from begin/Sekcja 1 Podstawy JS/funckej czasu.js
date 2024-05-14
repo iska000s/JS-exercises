@@ -41,7 +41,7 @@
 //     }
 // }, 1000);
 
-let r = 3;
+let r = 2;
 let j = r;
 const timeoutEnd = setTimeout(() => {
 
