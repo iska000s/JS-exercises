@@ -31,12 +31,29 @@
 //     }
 // }, 1000);
 
-let n = 5;
-let i = 0;
-const countHello = setInterval(function (){
-    i++;
-    console.log(`Hello ${i}`);
-    if (i >= 5){
-        clearInterval(countHello);
+// let n = 5;
+// let i = 0;
+// const countHello = setInterval(function (){
+//     i++;
+//     console.log(`Hello ${i}`);
+//     if (i >= 5){
+//         clearInterval(countHello);
+//     }
+// }, 1000);
+
+let r = 3;
+let j = r;
+const timeoutEnd = setTimeout(() => {
+
+    console.log("Koniec czasu.");
+    
+    const intervalReturn = setInterval(function(){
+
+    console.log(`Powrót do zadań za ${j}`)
+    j--;
+    if (j < 0){
+        clearInterval(intervalReturn);
     }
 }, 1000);
+
+}, 2000);
