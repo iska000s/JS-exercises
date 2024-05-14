@@ -1,3 +1,5 @@
+
+
 // ĆWICZENIA METOD, THIS ITP
 console.log("Hi, let's do the exercises using JS methods");
 
