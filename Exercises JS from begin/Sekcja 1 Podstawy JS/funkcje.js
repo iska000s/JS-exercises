@@ -264,3 +264,60 @@ console.log(sumAll(1, 3, 5))
 
 console.clear()
 
+
+function ref(arr){
+    for(let i = 0; i < arr.length; i++){
+        arr[i] *= 3;
+    }
+    return arr
+}
+
+const arr4 = [1, 2, 3, 4, 5, 6, 7]
+
+console.log(ref(arr4))
+
+console.clear()
+
+
+
+function createComputer (cpu, gpu, ram, disk){
+    return{
+        cpu: "amd",
+        gpu: "nvidia",
+        ram: "32gb",
+        dysk: "1tb"
+    }
+}
+
+console.log(createComputer());
+
+function createLaptop(obj, type, weight){
+    return{
+        ...obj,
+        type: "laptopo",
+        weight: 2.5,
+    }
+}
+
+console.log(createLaptop(createComputer(), "tablet", 1.5))
+
+console.clear()
+
+function createUser(name, contact){
+    let user = {
+        name: name,
+        telephone: null,
+        email: null,
+    }
+
+    if(typeof contact == "string"){
+         user.telephone = contact;
+        }
+     else if (typeof contact !== "string"){
+        user.email = contact;
+    }
+    return user;
+    }
+
+let user1 = createUser("Pawel", "df");
+console.log(user1)
