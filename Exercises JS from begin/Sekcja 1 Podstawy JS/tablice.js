@@ -70,3 +70,4 @@ const car = {
 
 let carDescription = car.type + ", " + car.color + ", " + car.engine;
 console.log(carDescription);
+
