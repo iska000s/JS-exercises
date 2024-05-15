@@ -1,27 +1,3 @@
-<!DOCTYPE html>
-
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <meta name="author" content="Izabela Stankiewicz">
-    <meta name="description"
-          content="EX JS">
-    <meta name="keywords"
-          content="exercises">
-    <meta name="robots" content="index, follow">
-
-    <title>Ex JS zadanie</title>
-    
-
-  </head>
-  <body>
-    Cześć
-    Powtórzenie JS - ćwiczenia
-
-<script>
     // ZADANIE 1 - if
     // const result = 12 > 7;
 
@@ -95,7 +71,3 @@
     }
 
     console.log(sum);
-
-</script>
-</body>
-</html>

@@ -1,25 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <meta name="author" content="Izabela Stankiewicz">
-    <meta name="description"
-          content="EX JS">
-    <meta name="keywords"
-          content="exercises">
-    <meta name="robots" content="index, follow">
-
-    <title>Ex JS zadanie </title>
-    
-
-  </head>
-  <body>
-    Powtórzenie JS - ćwiczenia
-    
-<script>
 
 // ZADANIE 1 - ZMIENNE GLOBALNE I LOKALNE
 const name = "Asia";
@@ -241,8 +219,3 @@ console.log(users.user3);
 
 users.user1 = createUser(users.user1.name, users.user1.contact);
 console.log(users.user1);
-
-
-</script>
-</body>
-</html>
