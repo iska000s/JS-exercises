@@ -179,3 +179,88 @@ function hireEmployee(name, surname) {
 const employee1 = hireEmployee("Kasia", "Kowalska");
 console.log(employee1)
 
+
+console.clear();
+
+
+function createPhone (brand, color) {
+    if (color !== "white" && color !== "black" && color !== "silver"){
+        return brand + " " + color
+    } else {
+        return "color is too popular";
+    }
+}
+
+console.log(createPhone("sony", "black"));
+console.log(createPhone("sony", "red"));
+console.log(createPhone("iPhon", "white"));
+
+let testFunction = function (a, b){
+    return a+b;
+}
+console.log(testFunction(1,5))
+
+let testMultiply = function (a, b){
+    return a*b;
+}
+
+console.log(testMultiply(3, 6))
+let testMultiply2 = testMultiply(2, 3)
+console.log(testMultiply2)
+
+console.clear()
+
+
+
+function show(txt){
+    console.log(txt);
+}
+
+function showArr(arr, callback){
+    for (let i =0; i < arr.length; i++){
+        const num = arr[i];
+        callback(num)
+    }
+}
+
+const tab = [1, 2, 3, 4, 5];
+showArr(tab, show)
+
+console.clear()
+
+// zadanie
+
+function greaterThan6(arr, callback) {
+    for (let i = 0; i < arr.length; i++){
+        // let nr = arr[i];
+        // if (nr > 6){
+        //     callback(nr)
+        // }
+        if (arr[i]>6) callback(arr[i]);
+    }
+}
+
+// function showArrNr (txt){
+//     console.log(txt)
+// }
+let arrNr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+// greaterThan6(arrNr, showArrNr);
+greaterThan6(arrNr, function(txt2){
+    console.log(txt2)
+})
+
+console.clear();
+
+function sumAll() {
+    let result = 0;
+    for (let i=0; i< arguments.length; i++){
+        result += arguments[i];
+    }
+    return result;
+}
+
+console.log(sumAll(1, 3, 5))
+
+console.clear()
+
