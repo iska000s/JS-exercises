@@ -35,3 +35,38 @@ let l = 10;
 ++l;
 l+=10
 console.log(++l);
+
+
+let speed = 300;
+let scoor = speed > 200 ? "szybko" : "wolno";
+console.log(scoor);
+
+let numb = 23;
+let result2 = numb > 20 ? "większe" : "mniejsze";
+console.log(result2);
+console.log(numb > 0 ? "większe" : "mniejsze")
+
+
+let emailSent = false;
+// czy wysłano email
+if (emailSent === true){
+    console.log("Wysłano email");
+} else {
+    console.log("Należy wysłać email");
+}
+
+// czy email nie został wysłany
+if (emailSent != true){
+    console.log("nie wysłano");
+} else {
+    console.log("wysłlano");
+}
+
+// czy email nie został wysłany
+if (!emailSent){
+    console.log("nie wysłano");
+} else {
+    console.log("wysłlano");
+};
+
+

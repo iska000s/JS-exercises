@@ -71,3 +71,25 @@
     }
 
     console.log(sum);
+    
+    
+    if (0) console.log("Nie wykona się");
+    if ("") console.log("Nie wykona się");
+    if (false) console.log("Nie wykona się");
+    if (-0) console.log("Nie wykona się");
+    if (NaN) console.log("Nie wykona się");
+    if (undefined) console.log("Nie wykona się");
+    if (null) console.log("Nie wykona się");
+    if (0n) console.log("Nie wykona się");
+    if (-0n) console.log("Nie wykona się");
+    
+    if (true) console.log("Wykona się1");
+    if (" ") console.log("Wykona się2");
+    if ("ddd") console.log("Wykona się3");
+    if (!"") console.log("Wykona się4");
+    if ({}) console.log("Wykona się5");
+    if ([]) console.log("Wykona się6");
+    if (123) console.log("Wykona się7");
+    if (!false) console.log("Wykona się8");
+    if (-12) console.log("Wykona się8");
+    
