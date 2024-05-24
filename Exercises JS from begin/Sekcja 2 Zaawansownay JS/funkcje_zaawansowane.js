@@ -43,34 +43,22 @@ console.clear();
 function Newspaper (title) {
     this.title = title;
     this.adverts = [];
-    // this.newAdvert = function (page, title, txt){
-    //     this.page = page,
-    //     this.title = title,
-    //     this.txt = txt,
-    //     console.log("Nowy artykuł: ", this.page, this.title, this.txt);
-    // }
 
     this.addAdvert = function(name, page){
         this.adverts.push({
             name: name,
             page: page
         });
-        }
+        this.adverts.sort((a, b) => a.page - b.page);
+    };
         
     this.printAdverts  = function(){
-        
         for (let i = 0; i < this.adverts.length; i++){
             const a = this.adverts[i];
             console.log("Advert: ", a.name, a.page);
         }
-       
     }
-
-    
 }
-
-
-
 const magazine = new Newspaper("It world");
 console.log(magazine);
 
@@ -80,7 +68,3 @@ magazine.addAdvert("Phone", 1);
 magazine.printAdverts();
 
 
-// JAK ARTYKUŁY USTAWIĆ W KOLEJNOŚCI "PAGE"????????????
-// MOŻE SORTOWANIEM, ALE NIE WYCHODZI MI
-// this.adverts.sort(this.page);
-// może ifem?
