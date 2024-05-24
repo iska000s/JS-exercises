@@ -7,3 +7,8 @@
 
 // import './Sekcja 2 Zaawansownay JS/metody_obiektu.js';
 import './Sekcja 2 Zaawansownay JS/funkcje_zaawansowane.js';
+
+// console.log(window);
+// alert("Otwórz magazyn");
+// window.alert("Nie został wybrany magazyn");
+
