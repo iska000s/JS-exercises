@@ -142,3 +142,72 @@ for (const prop in object.arr2){
     // console.log(object.arr2[prop])
     // console.log(object.arr2)
 }
+
+console.clear();
+//gettery i settery
+// ćw
+
+
+const truck = {
+    _brand: null,
+    _model: null,
+    _topSpeed: 0,
+
+    set brand(newBrand){
+            this._brand = newBrand;
+    },
+    get brand(){
+        return this._brand;
+    },
+
+    set model(newValue){
+        this._model = newValue
+    },
+    get model(){
+        return this._model;
+    },
+
+    set topSpeed(newSpeed){
+        if(newSpeed > 0){
+            this._topSpeed = newSpeed;
+        } else {
+            console.log("Speed too low");
+        }
+    },
+    get topSpeed(){
+        return this._topSpeed;
+    }
+}
+
+truck.brand = "Fiat";
+truck.model = "xc323";
+truck.topSpeed = -150;
+
+console.log(truck.topSpeed, truck.brand, truck.model);
+
+
+console.clear();
+
+// obiekty window
+
+setTimeout(function(){
+    console.log("After timeout")
+}, 800);
+
+
+let i = 0;
+// let intervalId = setInterval(() => {
+//     if(i < 2){
+//         console.log(i);
+//         i++
+//     } else{
+//         // console.log("koniec czasu");
+//      console.log("koniec czasu");
+//     }
+// }, 1000);
+
+
+// window.alert("hello world");
+let userInput = prompt("Podaj swoje imię");
+console.log("Imię użytkownika: ", userInput)
+
