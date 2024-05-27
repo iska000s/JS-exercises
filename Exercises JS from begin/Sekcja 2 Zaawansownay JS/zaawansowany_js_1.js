@@ -190,12 +190,12 @@ console.clear();
 
 // obiekty window
 
-setTimeout(function(){
-    console.log("After timeout")
-}, 800);
+// setTimeout(function(){
+//     console.log("After timeout");
+// }, 800);
 
 
-let i = 0;
+// let i = 0;
 // let intervalId = setInterval(() => {
 //     if(i < 2){
 //         console.log(i);
@@ -208,6 +208,21 @@ let i = 0;
 
 
 // window.alert("hello world");
-let userInput = prompt("Podaj swoje imię");
-console.log("Imię użytkownika: ", userInput)
+// let userInput = prompt("Podaj swoje imię");
+// console.log("Imię użytkownika: ", userInput)
 
+
+console.clear();
+
+//testy
+
+
+let y = 10;
+if (1 == 1){
+    
+    console.log(y);
+    // temporal dead zone:
+    let y = 20;
+}
+
+console.clear();

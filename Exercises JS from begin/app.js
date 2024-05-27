@@ -12,8 +12,11 @@ import './Sekcja 2 Zaawansownay JS/zaawansowany_js_1.js';
 // alert("Otwórz magazyn");
 // window.alert("Nie został wybrany magazyn");
 
-console.log(window.innerHeight);
-console.log(window.innerWidth);
+// console.log(window.innerHeight);
+// console.log(window.innerWidth);
 
-console.log(innerHeight);
-console.log(innerWidth);
+// console.log(innerHeight);
+// console.log(innerWidth);
+
+// let userInput = prompt("Podaj swoje imię");
+
