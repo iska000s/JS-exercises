@@ -6,7 +6,7 @@
 // import './Sekcja 1 Podstawy JS/tablice.js';
 
 // import './Sekcja 2 Zaawansownay JS/metody_obiektu.js';
-import './Sekcja 2 Zaawansownay JS/zaawansowany_js_1.js';
+// import './Sekcja 2 Zaawansownay JS/zaawansowany_js_1.js';
 
 // console.log(window);
 // alert("Otwórz magazyn");
