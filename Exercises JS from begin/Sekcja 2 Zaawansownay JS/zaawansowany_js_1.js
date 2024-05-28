@@ -229,6 +229,7 @@ console.clear();
 
 
 // PRYMITYWY JAKO OBIEKTY
+// 1. liczby
 
 let numPrym = 32.2434;
 let numPrym2 = new Number(323.432);
@@ -259,3 +260,72 @@ console.log(123.42424242.toFixed(3))
 
 console.log(Math.sqrt(16));
 console.log(Math.trunc(16.2323));
+
+
+console.clear();
+
+//2. łańcuchy znaków
+
+let str = "Hello World";
+console.log(str);
+str = str.toUpperCase();
+console.log(str);
+console.log(str.toLowerCase());
+console.log(str.toLocaleLowerCase());
+
+console.log(str.charAt(0));
+console.log(str.charCodeAt(0));
+
+str = "a b c d e f g"
+console.log(str.split(" "));    // tablica elementów podzielona spacjami
+
+const data = "1 2 3 4 5".split(" "); 
+console.log(data);
+let result = data.join("|")     // połączenie elementów do łańcucha znaków
+console.log(result);
+
+str = "A B C D E B B B";
+str = str.replace("B", "test");     // zamiana elementów ale tylko jednego, czyli na końcu B już nie zmieni
+console.log(str);
+
+str = str.replace(/B/g, "TEST");       // wyrażenie regularne - zmieni wszystkie B
+console.log(str);
+
+str ="0123456789";
+console.log(str.substring(2));  // chcrmy pobrać od drugiego elementu łańcucha
+console.log(str.substring(2, 6));  
+
+let txt = "Kasia lubi jak śmieje się Kasia w głosy";
+console.log(txt.indexOf("Kasia", 2));  
+console.log(txt.indexOf("Kasię", 2));  // -1
+
+let txt2 = txt.substring(txt.lastIndexOf("Kasia"));
+console.log(txt2);
+
+// let d = 0;
+// let c = 0;
+
+let array = [
+    {d: 3, c: "cc"},
+    {d: 1, c: "ff"}];
+
+array.sort((a, b) => a.d - b.d);
+
+
+
+
+// this.addAdvert = function(name, page){
+//     this.adverts.push({
+//         name: name,
+//         page: page
+//     });
+//     this.adverts.sort((a, b) => a.page - b.page);
+// };
+    
+
+
+
+
+
+
+
