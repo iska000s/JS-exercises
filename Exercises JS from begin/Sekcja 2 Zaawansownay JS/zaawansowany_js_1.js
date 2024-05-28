@@ -220,9 +220,42 @@ console.clear();
 let y = 10;
 if (1 == 1){
     
-    console.log(y);
+    // console.log(y);
     // temporal dead zone:
     let y = 20;
 }
 
 console.clear();
+
+
+// PRYMITYWY JAKO OBIEKTY
+
+let numPrym = 32.2434;
+let numPrym2 = new Number(323.432);
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(Number.MIN_SAFE_INTEGER);
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+console.log(Number.parseInt("4234234234.2323233")+100);
+console.log(Number.parseFloat("4234234234.322323332")+100);
+console.log(Number.isInteger(4234234234));
+console.log(Number.isInteger("4234234234.322323332"));
+console.log(Number.isInteger(4234234234.322323332));
+
+let a = -1 / 0;
+console.log(a);
+console.log(Number.isFinite(a));
+console.log(Number.isFinite(1));
+
+console.log(Math.round(12.343));    // zaokrąglenie
+console.log(Math.ceil(12.343));  // zaokrąlenie do gówy
+console.log(Math.floor(12.843)); // zaokrąglenie do dołu
+
+console.log(Math.random());  // od 0 do 1 (bez 1 i 0) 
+console.log(Math.random()*5);  // od 0 do 5 (bez 5 i 0)
+console.log(123.42424242.toFixed(1))
+console.log(123.42424242.toFixed(2))
+console.log(123.42424242.toFixed(3))
+
+console.log(Math.sqrt(16));
+console.log(Math.trunc(16.2323));
