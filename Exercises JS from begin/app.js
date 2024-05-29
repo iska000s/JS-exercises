@@ -7,6 +7,7 @@
 
 // import './Sekcja 2 Zaawansownay JS/metody_obiektu.js';
 // import './Sekcja 2 Zaawansownay JS/zaawansowany_js_1.js';
+import './Sekcja 2 Zaawansownay JS/drzewo_dom.js';
 
 // console.log(window);
 // alert("Otwórz magazyn");

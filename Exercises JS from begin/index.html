@@ -24,7 +24,7 @@
 
     <div id="content">Lorem, ipsum dolor.</div>
 
-    <ul>
+    <ul class="list">
       <li class="menu-item">link 1</li>
       <li class="menu-item current">link 2</li>
       <li class="menu-item">link 3</li>
@@ -32,26 +32,9 @@
 
 <script>
     console.log("Hello!")
-    console.warn("Warning")
+    // console.warn("Warning")
 
-    //Drzewo dom - ćwiczenia powtarzające
 
-    let div = document.getElementById("content");
-    console.log(div);
-
-    div.style.color = "orange";
-    div.innerHTML = "<b>Hello World</b>";
-
-    let liItem = document.querySelector("li.menu-item");
-    console.log(liItem)
-    liItem.style.fontWeight = "bold"
-
-    let liList = document.querySelectorAll("ul li.menu-item.current");
-
-    for (let i = 0; i < liList.length; i++){
-      const el = liList[i];
-      el.style.color = "red";
-    }
 
 </script>
 <script type="module" src="app.js"></script>
