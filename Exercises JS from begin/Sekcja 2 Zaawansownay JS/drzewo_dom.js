@@ -63,3 +63,19 @@ pClick.addEventListener("click", function(event){
 // pClick.addEventListener("click", function(event){
 //     console.log(event.clientX, event.clientY);
 // });
+
+const input = document.querySelector("input");
+input.value = "Hello World";
+
+const area = document.querySelector("textarea");
+area.value = "content..."
+
+input.addEventListener("input", function(event){
+    // console.log(event.target);
+    console.log(event.target.value);
+})
+
+area.addEventListener("input", (event) => {
+    console.log(event.target.value);
+})
+
