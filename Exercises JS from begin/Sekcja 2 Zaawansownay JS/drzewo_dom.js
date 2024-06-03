@@ -79,3 +79,28 @@ area.addEventListener("input", (event) => {
     console.log(event.target.value);
 })
 
+const parLorem = document.querySelector("#lorem");
+console.log(parLorem);
+
+parLorem.addEventListener("click", function(event){
+    console.log("Kliknięto w lorem ipsum: ", event.clientX, event.clientY);
+});
+
+parLorem.addEventListener("mouseenter", function(event){
+    console.log("mouseenter");
+})
+parLorem.addEventListener("mouseover", function(event){
+    console.log("mouseover");
+})
+parLorem.addEventListener("mouseleave", function(event){
+    console.log("mouseleva");
+})
+parLorem.addEventListener("mouseup", function(event){
+    console.log("mouseup");
+})
+parLorem.addEventListener("mouseout", function(event){
+    console.log("mouseout");
+})
+parLorem.addEventListener("mousemove", function(event){
+    console.log("mousemove");
+})
