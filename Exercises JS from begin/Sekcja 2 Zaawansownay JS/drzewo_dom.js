@@ -88,19 +88,63 @@ parLorem.addEventListener("click", function(event){
 
 parLorem.addEventListener("mouseenter", function(event){
     console.log("mouseenter");
-})
+});
 parLorem.addEventListener("mouseover", function(event){
     console.log("mouseover");
-})
+});
 parLorem.addEventListener("mouseleave", function(event){
     console.log("mouseleva");
-})
+});
 parLorem.addEventListener("mouseup", function(event){
     console.log("mouseup");
-})
+});
 parLorem.addEventListener("mouseout", function(event){
     console.log("mouseout");
-})
+});
 parLorem.addEventListener("mousemove", function(event){
     console.log("mousemove");
-})
+});
+
+
+
+// format JSON - JS Object Notation
+
+let data = {
+    "user" : {
+        "name": "Ola",
+        "age": 22,
+    }
+}
+;
+
+
+// let obj = JSON.parse(data);
+// console.log(obj);
+// console.log(obj.user.name);
+
+let jsonStr = JSON.stringify(data);
+console.log(jsonStr);
+console.log(data.user.name);   // pokaże z obiektu
+// console.log(jsonStr.user.name); //wystąpi błąd, bo to string
+
+
+let data2 = `
+{
+    "user": {
+        "name": "Ola",
+        "surname": "Kowalska",
+        "age": 33,
+        "languages": ["JS", "JAVA"],
+        "adress": {
+            "city": "KRK",
+            "street": "wilcza"
+        }
+    }
+}
+`;
+
+let objStr = JSON.parse(data2);
+console.log(objStr);
+
+console.clear();
+
