@@ -10,7 +10,8 @@
 // import './Sekcja 2 Zaawansownay JS/drzewo_dom.js';
 // import './Sekcja 3 ES6+/arrow_functions.js';
 // import './Sekcja 3 ES6+/spread_rest.js';
-import './Sekcja 3 ES6+/destukturyzujące_przypisanie.js';
+// import './Sekcja 3 ES6+/destukturyzujące_przypisanie.js';
+import './Sekcja 3 ES6+/for_of_in.js';
 
 // console.log(window);
 // alert("Otwórz magazyn");
