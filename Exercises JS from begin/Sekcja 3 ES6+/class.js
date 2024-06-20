@@ -95,6 +95,67 @@ console.log(Animal2.getAnimal2Count());
 //  extends i super
 
 
+// rozszerzenie klas - jak np się powtarzają pewne obiekty
+
+class Furniture {
+    constructor(name){
+        this.name = name;
+        
+        if (Furniture.count === undefined) Furniture.count = 0;
+        
+        this.id = Furniture.count;
+        Furniture.count++;
+
+        this._type = "furniture";
+    }
+
+    set type(str){
+        if (typeof str === "string") this._type = str;
+    }
+    get type(){
+        return this._type;
+    }
+    printName() {
+        console.log(`Nazwa mebla: ${this.name}`);
+    }
+}
+
+class Table extends Furniture {
+    constructor(name){
+        super(name);
+        this.type = "table";
+    }
+    printName() {           //przesłania metodę z Furniture
+        super.printName();
+        console.log(`Nazwa stołu: ${this.name}`);
+    }
+
+
+}
+
+const table1 = new Table("Blue table");
+const wardrobe1 = new Furniture("Wardrobe 1");
+const wardrobe2 = new Furniture("Wardrobe 2");
+const wardrobe3 = new Furniture(342);
+
+console.log(Furniture.count)
+console.log(table1);
+console.log(wardrobe1);
+console.log(wardrobe2);
+table1.printName();
+console.log(wardrobe3);
+console.log(wardrobe1.type)
+
+wardrobe2.type = "12";
+console.log(wardrobe2.type);
+
+wardrobe3.type = 12;            //nie jest stringiem, więc pokaże bazową wartość
+console.log(wardrobe3.type);
+
+
+
+
+
 
 
 
