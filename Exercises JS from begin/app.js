@@ -13,7 +13,9 @@
 // import './Sekcja 3 ES6+/destukturyzujące_przypisanie.js';
 // import './Sekcja 3 ES6+/for_of_in.js';
 // import './Sekcja 3 ES6+/map.js';
-import './Sekcja 3 ES6+/class.js';
+// import './Sekcja 3 ES6+/class.js';
+// import './Sekcja 3 ES6+/promise.js';
+import './Sekcja 3 ES6+/default_param_values.js';
 
 // console.log(window);
 // alert("Otwórz magazyn");
