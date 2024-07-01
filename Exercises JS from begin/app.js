@@ -1,7 +1,7 @@
 
 // import './Sekcja 3 ES6+/template_literals.js';
 
-
+import Result from "./Sekcja 3 ES6+/array_functions.js";
 
 // console.log(window);
 // alert("Otwórz magazyn");
