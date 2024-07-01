@@ -1,5 +1,7 @@
 
-import './Sekcja 3 ES6+/template_literals.js';
+// import './Sekcja 3 ES6+/template_literals.js';
+
+
 
 // console.log(window);
 // alert("Otwórz magazyn");

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="module" src="test-module.js"></script>
+    <script type="module">
+        import * as myModule from "./test-module.js";
+        console.log(myModule);
+        console.log(myModule.testValue);
+
+        import {getData, add as addition} from "./test-module.js"; //importowanie powinno być na początku, ale zostawię dla porządku ćwiczeń tuta
+        console.log(getData());
+        console.log(addition(10, 2));
+
+        // import exportu default
+        import myDefault from "./test-module.js";
+        console.log(myDefault);
+
+        import defaultExport, {multiply, testValue as testData} from "./test-module.js";
+        console.log(multiply(1, 4));
+        console.log(testData);
+
+    </script>
+</body>
+</html>

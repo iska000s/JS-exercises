@@ -51,11 +51,3 @@ console.log(text.includes("world")) //true
 console.log(text.startsWith("Hello")) //true - jeżeli zaczyna się tym tekstem
 
 
-
-
-
-
-
-
-
-
