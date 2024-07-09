@@ -1,7 +1,7 @@
 
-// import './Sekcja 3 ES6+/template_literals.js';
+import './Sekcja 3 ES6+/call_apply_bind.js';
 
-import Result from "./Sekcja 3 ES6+/array_functions.js";
+// import Result from "./Sekcja 3 ES6+/array_functions.js";
 
 // console.log(window);
 // alert("Otwórz magazyn");
