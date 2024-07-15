@@ -1,5 +1,7 @@
+// 
+// import './Sekcja 3 ES6+/call_apply_bind.js';
 
-import './Sekcja 3 ES6+/call_apply_bind.js';
+import './Sekcja 1 Podstawy JS/testy.js'
 
 // import Result from "./Sekcja 3 ES6+/array_functions.js";
 
