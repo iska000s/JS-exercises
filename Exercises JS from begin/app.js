@@ -1,7 +1,8 @@
 // 
 // import './Sekcja 3 ES6+/call_apply_bind.js';
 
-import './Sekcja 1 Podstawy JS/testy.js'
+import './01_Zadanie_1/js/promise_zadanie.js/names.js';
+import '.';
 
 // import Result from "./Sekcja 3 ES6+/array_functions.js";
 

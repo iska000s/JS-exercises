@@ -60,3 +60,5 @@ for (let i = 0; i <= o; i++){
 
 console.log(array);
 
+
+
