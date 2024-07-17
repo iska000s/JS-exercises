@@ -2,7 +2,7 @@
 // import './Sekcja 3 ES6+/call_apply_bind.js';
 
 import './01_Zadanie_1/js/promise_zadanie.js/names.js';
-// import '.';
+import './Sekcja 2 Zaawansownay JS/api.js';
 
 // import Result from "./Sekcja 3 ES6+/array_functions.js";
 
